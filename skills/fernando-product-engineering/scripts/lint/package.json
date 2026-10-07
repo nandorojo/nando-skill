@@ -1,0 +1,16 @@
+{
+  "name": "@fernando/architecture-lint",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "^20.19.0 || ^22.13.0 || >=24" },
+  "exports": "./index.js",
+  "bin": { "nando-query-gate": "./query-gate.js" },
+  "scripts": { "test": "node --test tests/*.test.js" },
+  "dependencies": {
+    "eslint": "10.10.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.70.0",
+    "@tanstack/eslint-plugin-query": "5.102.8"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@example/libraries",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#libraries/*": "./src/*"
+  },
+  "exports": {
+    "./react": "./src/react/index.ts",
+    "./effect": "./src/effect/index.ts",
+    "./effect/rpc": "./src/effect/rpc.ts",
+    "./query/react": "./src/query/react/index.ts",
+    "./navigation/next": "./src/navigation/next/index.ts",
+    "./navigation/native": "./src/navigation/native/index.ts",
+    "./navigation/electron": "./src/navigation/electron/index.ts"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "next": "^16.0.0",
+    "react-native": "*",
+    "expo-router": "*"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true },
+    "next": { "optional": true },
+    "react-native": { "optional": true },
+    "expo-router": { "optional": true }
+  }
+}

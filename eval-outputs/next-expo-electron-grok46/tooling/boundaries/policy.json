@@ -1,0 +1,18 @@
+{
+  "description": "Sketch of the import policy this eval is trying to follow. Not enforced by lint yet.",
+  "allowed": {
+    "apps/*": ["@example/features", "@example/api/next"],
+    "features": ["@example/client-sdk", "@example/design-system", "@example/libraries", "@example/core/*/schema"],
+    "client-sdk": ["@example/core/*/schema", "@example/libraries", "@example/rpc"],
+    "rpc": ["@example/api", "@example/api/rpc", "@example/libraries"],
+    "api": ["@example/core/*", "@example/libraries"],
+    "core": ["@example/libraries"],
+    "design-system": ["@example/libraries"]
+  },
+  "blocked": [
+    "apps importing core/db or services",
+    "features importing next/navigation or react-native primitives",
+    "browser importing @example/api server barrel at runtime",
+    "wildcard vendor re-exports"
+  ]
+}

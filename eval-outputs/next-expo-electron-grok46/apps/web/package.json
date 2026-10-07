@@ -1,0 +1,15 @@
+{
+  "name": "@example/web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "echo \"eval mock: Next is not started\""
+  },
+  "dependencies": {
+    "@example/api": "workspace:*",
+    "@example/features": "workspace:*",
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

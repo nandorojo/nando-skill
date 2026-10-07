@@ -1,0 +1,8 @@
+{
+  "expo": {
+    "name": "Grok 46 Skill Eval",
+    "slug": "next-expo-electron-grok46",
+    "scheme": "eval",
+    "plugins": ["expo-router"]
+  }
+}

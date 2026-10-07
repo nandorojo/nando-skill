@@ -1,0 +1,12 @@
+{
+  "name": "@example/native",
+  "private": true,
+  "main": "expo-router/entry",
+  "dependencies": {
+    "@example/features": "workspace:*",
+    "expo": "*",
+    "expo-router": "*",
+    "react": "^19.0.0",
+    "react-native": "*"
+  }
+}

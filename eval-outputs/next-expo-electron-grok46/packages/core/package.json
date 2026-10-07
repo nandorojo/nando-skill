@@ -1,0 +1,23 @@
+{
+  "name": "@example/core",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@example/libraries": "workspace:*"
+  },
+  "imports": {
+    "#core/*": "./src/*"
+  },
+  "exports": {
+    "./notes/schema": "./src/features/notes/api/schema.ts",
+    "./notes/rpc": "./src/features/notes/api/rpc.ts",
+    "./notes/server": "./src/features/notes/index.ts",
+    "./tasks/schema": "./src/features/tasks/api/schema.ts",
+    "./tasks/rpc": "./src/features/tasks/api/rpc.ts",
+    "./tasks/server": "./src/features/tasks/index.ts",
+    "./auth/actor": "./src/features/auth/actor.ts",
+    "./execution": "./src/features/execution/index.ts",
+    "./execution/node": "./src/features/execution/node.ts",
+    "./execution/sandbox": "./src/features/execution/sandbox.ts"
+  }
+}

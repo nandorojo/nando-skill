@@ -1,0 +1,13 @@
+{
+  "name": "@example/electron",
+  "private": true,
+  "type": "module",
+  "main": "src/main.ts",
+  "dependencies": {
+    "@example/core": "workspace:*",
+    "@example/features": "workspace:*",
+    "electron": "*",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@example/design-system",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./react": "./src/react/index.ts"
+  },
+  "imports": {
+    "#design-system/*": "./src/*"
+  },
+  "dependencies": {
+    "@example/libraries": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-native": "*"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true },
+    "react-native": { "optional": true }
+  }
+}

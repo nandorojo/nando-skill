@@ -1,0 +1,21 @@
+{
+  "name": "@example/api",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./rpc": "./src/rpc/index.ts",
+    "./next": "./src/next/index.ts",
+    "./bun": "./src/bun/index.ts"
+  },
+  "dependencies": {
+    "@example/core": "workspace:*",
+    "@example/libraries": "workspace:*"
+  },
+  "peerDependencies": {
+    "next": "^16.0.0"
+  },
+  "peerDependenciesMeta": {
+    "next": { "optional": true }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@example/features",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./react": "./src/react.ts",
+    "./notes/react": "./src/notes/react/index.ts",
+    "./notes/next": "./src/notes/next/index.ts",
+    "./notes/native": "./src/notes/native/index.ts",
+    "./notes/electron": "./src/notes/electron/index.ts",
+    "./tasks/react": "./src/tasks/react/index.ts",
+    "./tasks/next": "./src/tasks/next/index.ts",
+    "./tasks/native": "./src/tasks/native/index.ts",
+    "./tasks/electron": "./src/tasks/electron/index.ts",
+    "./app/next": "./src/app/next/index.ts",
+    "./app/native": "./src/app/native/index.ts",
+    "./app/electron": "./src/app/electron/index.ts"
+  },
+  "imports": {
+    "#features/*": "./src/*"
+  },
+  "dependencies": {
+    "@example/client-sdk": "workspace:*",
+    "@example/core": "workspace:*",
+    "@example/design-system": "workspace:*",
+    "@example/libraries": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true }
+  }
+}

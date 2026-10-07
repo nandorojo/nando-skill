@@ -1,0 +1,6 @@
+export { createClient, MockTransportError } from './client'
+export type { Client, ClientOptions } from './client'
+export type { InputOf, OutputOf } from './inference'
+export type { TransportFailed } from './failure'
+export * as Notes from './features/notes'
+export * as Tasks from './features/tasks'

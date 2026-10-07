@@ -1,0 +1,10 @@
+{
+  "name": "next-expo-electron-grok46",
+  "private": true,
+  "type": "module",
+  "description": "Structural eval of Grok 4.6 following fernando-product-engineering. Not a runnable product.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}
